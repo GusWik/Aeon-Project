@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="description" content="" />
+    <link rel="manifest" href="/js/manifest.json" />
+    <meta name="apple-mobile-web-app-title" content="マイページ" />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="/assets/images/appletouchicon72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/assets/images/appletouchicon114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="300x300"
+      href="/assets/images/appletouchicon300.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="1024x1024"
+      href="/assets/images/appletouchicon1024.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/images/favicon16.png"
+      sizes="16x16"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/images/favicon32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/images/favicon48.png"
+      sizes="48x48"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/images/favicon96.png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/images/favicon128.png"
+      sizes="128x128"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/images/favicon256.png"
+      sizes="256x256"
+    />
+    <meta http-equiv="Cache-control" content="must-revalidate" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Google Tag Manager -->
+    <script>
+      ;(function (w, d, s, l, i) {
+        w[l] = w[l] || []
+        w[l].push({
+          'gtm.start': new Date().getTime(),
+          event: 'gtm.js',
+        })
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : ''
+        j.async = true
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
+        f.parentNode.insertBefore(j, f)
+      })(window, document, 'script', 'dataLayer', 'GTM-568HRPW')
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- Google Analytics -->
+    <script>
+      ;(function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r
+        ;(i[r] =
+          i[r] ||
+          function () {
+            ;(i[r].q = i[r].q || []).push(arguments)
+          }),
+          (i[r].l = 1 * new Date())
+        ;(a = s.createElement(o)), (m = s.getElementsByTagName(o)[0])
+        a.async = 1
+        a.src = g
+        m.parentNode.insertBefore(a, m)
+      })(
+        window,
+        document,
+        'script',
+        'https://www.google-analytics.com/analytics.js',
+        'ga'
+      )
+
+      ga('create', 'UA-85280494-1', 'auto')
+      ga('send', 'pageview')
+    </script>
+    <!-- Google Analytics -->
+    <!-- showtalk chat tag -->
+    <script
+      src="https://api.showtalk.jp/js/showtalk.js?accessKey=b458cf644e2b006b91025da7324d0aa3"
+      defer
+    ></script>
+    <title>イオンモバイル マイページ</title>
+  </head>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-568HRPW"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <noscript> You need to enable JavaScript to run this app. </noscript>
+    <div
+      id="loader"
+      style="
+        width: 100vw;
+        height: 100vh;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        flex-direction: column;
+      "
+    >
+      <div style="margin-bottom: 30px">
+        <img
+          src="/assets/images/loader100.gif"
+          alt="ローディング中"
+          width="100"
+          height="100"
+        />
+      </div>
+      <p style="margin-bottom: 30px; text-align: center; line-height: 2">
+        現在読み込み中です<br />
+        しばらく待っても表示されない場合<br />
+        以下のボタンで再読込してください
+      </p>
+      <button onclick="location.reload(true);">
+        <img
+          src="/assets/images/reload.svg"
+          alt="再読込"
+          width="32"
+          height="32"
+        />
+      </button>
+    </div>
+    <div id="root"></div>
+    <script src="/js/vendor.bundle.js?v=202211291626"></script>
+  </body>
+</html>

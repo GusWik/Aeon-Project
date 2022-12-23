@@ -1,0 +1,104 @@
+.tooltiptouch {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 10000px;
+  height: 10000px;
+  z-index: 1;
+  opacity: 0;
+  background-color: #ff0000;
+}
+
+.tooltipwhite {
+  position: absolute;
+  background-color: #fff;
+  color: #000;
+  font-size: 12px;
+  /*text-align:center;*/
+  padding: 10px 5px;
+  z-index: 2;
+  transform: translate3d(-50%, -50%, 0);
+  /*transform:translate(-50%,-50%);*/
+  transition: opacity 0.3s;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.tooltipred {
+  position: absolute;
+  background-color: #fceceb;
+  border: 1px solid #e5736a;
+  color: #e05c52;
+  font-size: 12px;
+  text-align: center;
+  padding: 10px 5px;
+  z-index: 2;
+  transform: translate3d(-50%, -50%, 0);
+  /*transform:translate(-50%,-50%);*/
+  transition: opacity 0.3s;
+}
+
+.tooltipred::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -8px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: #e05c52 transparent transparent;
+  z-index: 2;
+}
+
+.tooltipred::after {
+  content: '';
+  position: absolute;
+  top: 96%;
+  left: 50%;
+  margin-left: -8px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: #fceceb transparent transparent;
+  z-index: 2;
+}
+
+.tooltipcross {
+  position: absolute;
+  right: 3px;
+  top: 0;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.errortooltips {
+  max-width: 300px;
+  width: 90%;
+  min-height: 40px;
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer */
+  -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+  -webkit-user-select: none; /* Chrome, Safari, and Opera */
+  -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
+}
+
+.tooltips {
+  max-width: 300px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: -14px;
+  width: auto;
+  min-height: 40px;
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer */
+  -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+  -webkit-user-select: none; /* Chrome, Safari, and Opera */
+  -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
+}
+
+.tooltipTextLine {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}

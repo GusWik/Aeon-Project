@@ -1,0 +1,27 @@
+{
+    "name": "マイページ",
+    "short_name": "マイページ",
+    "icons": [
+        {
+            "src": "/assets/images/appletouchicon72.png",
+            "sizes": "72x72",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/images/appletouchicon114.png",
+            "sizes": "114x114",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/images/appletouchicon300.png",
+            "sizes": "300x300",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/images/appletouchicon1024.png",
+            "sizes": "1024x1024",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/login/"
+}
